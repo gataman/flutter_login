@@ -54,6 +54,7 @@ class AuthCard extends StatefulWidget {
     this.introWidget,
     required this.initialIsoCode,
     this.keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual,
+    this.footerWidget,
   });
 
   final EdgeInsets padding;
@@ -82,6 +83,7 @@ class AuthCard extends StatefulWidget {
   final TextInputType? confirmSignupKeyboardType;
   final Widget? introWidget;
   final String? initialIsoCode;
+  final Widget? footerWidget;
 
   @override
   AuthCardState createState() => AuthCardState();
@@ -381,6 +383,7 @@ class AuthCardState extends State<AuthCard> with TickerProviderStateMixin {
             hideProvidersTitle: widget.hideProvidersTitle,
             introWidget: widget.introWidget,
             initialIsoCode: widget.initialIsoCode,
+            footerWidget: widget.footerWidget,
           ),
         );
       case _recoveryIndex:

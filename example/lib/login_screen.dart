@@ -275,6 +275,7 @@ class LoginScreen extends StatelessWidget {
         // Show new password dialog
       },
       headerWidget: const IntroWidget(),
+      footerWidget: const Text('Footer'),
     );
   }
 }
